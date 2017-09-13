@@ -8,3 +8,4 @@ How to alter table (change the attributes when table first create)?	e.g. alter t
 How to update table content? e.g. update cats set name="regi" where age = 10;
 # Tips
 1. better to use alias when using joint table
+2. run .sql file in the terminal by using source <fileName.sql> after login to mysql
