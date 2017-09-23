@@ -20,7 +20,7 @@ e) Commonly use command to refine selection in mySQL
 2. Order by: select last_name from family order by last_name desc/asc(default). you can also do select last_name, first_name, year from family order by 2, which refer to order by year. mySQL is not 0 indexed. select first_name, last_name from family order by last_name, first_name (first sorted last_name, then sorted first_name)
 3. Limit: e.g. select top 10 best selling books. select books from library order by selling_amount desc limit 10; Gotcha: limit 0,3/1,3(starting point, end point). row is 0 indexed, 0 is the first row, and 1 is the second row. specify a range used for pagination. 
 4. Like: where movie_name like '%star%', wildcard % means something star something, 'star%': beginning with star then something, '%star': something end with star
-5. Another wildward: '____' for specifying how many digits/characters, '%\\%%', '%\\_%(using escape character)
+5. Another wildward: '____' for specifying how many digits/characters (using escape character)
 # Tips
 1. better to use alias when using joint table
 2. run .sql file in the terminal by using source <fileName.sql> after login to mysql
