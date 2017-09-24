@@ -24,3 +24,4 @@ e) Commonly use command to refine selection in mySQL
 # Tips
 1. better to use alias when using joint table
 2. run .sql file in the terminal by using source <fileName.sql> after login to mysql
+3. using concat to build a summary of the data source
