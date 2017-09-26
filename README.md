@@ -23,7 +23,8 @@ e) Commonly used commands to refine selection in mySQL
 5. Another wildward: '____' for specifying how many digits/characters (using escape character)
 f) Commonly used aggregates functions
 1. count: select count(movie_title) from movie_2017 where movie_title like "%love%";
-2. group by: 
+2. group by: select drug_name, drug_manufacture, min(released_year) from drug_store group by drug_name
+3. sum: 
 # Tips
 1. better to use alias when using joint table
 2. run .sql file in the terminal by using source <fileName.sql> after login to mysql
