@@ -21,6 +21,7 @@ e) Commonly used commands to refine selection in mySQL
 3. Limit: e.g. select top 10 best selling books. select books from library order by selling_amount desc limit 10; Gotcha: limit 0,3/1,3(starting point, end point). row is 0 indexed, 0 is the first row, and 1 is the second row. specify a range used for pagination. 
 4. Like: where movie_name like '%star%', wildcard % means something star something, 'star%': beginning with star then something, '%star': something end with star
 5. Another wildward: '____' for specifying how many digits/characters (using escape character)
+6. Union/Union all: join multiple tables with the same name of column. 
 
 f) Commonly used aggregates functions
 1. count: select count(movie_title) from movie_2017 where movie_title like "%love%" to print out how many movies released in 2017
