@@ -40,6 +40,12 @@ create table comments (content varchar(100), create_at timestamp default now())
 create table comments (content varchar(100), changed_at timestamp default now() on update now()/current_timestamp)
 update comments set content='hello world' where content='hello regi';
 
+### h) Joins:
+1. cross join: select * from start_ups, venture_captial
+2. Implicit inner join: select start_ups_name, venture_captial, invest_date, investment from start_ups, ventures where
+start_up.id = venture.id
+3. Explicit inner joins: select * from start_ups join ventures on start_up.id = venture.id
+4. left join: 
 
 
 # Tips
