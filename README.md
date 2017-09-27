@@ -27,6 +27,7 @@ f) Commonly used aggregates functions
 2. group by: select drug_name, drug_manufacture, min(released_year) from drug_store group by drug_name
 3. sum: select song_writer_lname, song_writer_fname, sum(works) from songs group by song_write_lname, song_write_fname 
 4. avg: select director_name, avg(selling_tickets) from movies group by director_name
+5. max & min: select concat(director_fname, ' ', director_lname) as Director, Max(selling) as 'Best Movie' from movies group by director_fname, director_lname
 # Tips
 1. better to use alias when using joint table
 2. run .sql file in the terminal by using source <fileName.sql> after login to mysql
