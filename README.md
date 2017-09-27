@@ -29,6 +29,14 @@ f) Commonly used aggregates functions
 3. sum: select song_writer_lname, song_writer_fname, sum(works) from songs group by song_write_lname, song_write_fname 
 4. avg: select director_name, avg(selling_tickets) from movies group by director_name
 5. max & min: select concat(director_fname, ' ', director_lname) as Director, Max(selling) as 'Best Movie' from movies group by director_fname, director_lname
+
+g) date arithmatic:
+1. datediff, date_add, +/-: select birthdate, birthdate + interval 5 month from people; SELECT name, birthdate, DATEDIFF(NOW(), birthdate) FROM people; SELECT birthdt, DATE_ADD(birthdt, INTERVAL 10 SECOND) FROM people;
+2. add timestamp (data type): 
+create table comments (content varchar(100), create_at timestamp default now())
+
+
+
 # Tips
 1. better to use alias when using joint table
 2. run .sql file in the terminal by using source <fileName.sql> after login to mysql
