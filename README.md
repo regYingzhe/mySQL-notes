@@ -36,4 +36,4 @@ f) Commonly used aggregates functions
 4. Storing Text: VARCHAR VS CHAR(fixed length, truncate extra chars)
 5. Decimal: decimal(5,2): 888.88
 6. float: 4 byte, double: 8 byte
-7. Date: no time. YYYY-MM-DD; Time: no date: HH:MM:SS; DATETIME: both. curdate -> date, curtime -> time, now -> datetime
+7. Date: no time. YYYY-MM-DD; Time: no date: HH:MM:SS; DATETIME: both. curdate -> date, curtime -> time, now -> datetime,https://dev.mysql.com/doc/refman/5.7/en/date-and-time-functions.html
