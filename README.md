@@ -34,6 +34,9 @@ g) date arithmatic:
 1. datediff, date_add, +/-: select birthdate, birthdate + interval 5 month from people; SELECT name, birthdate, DATEDIFF(NOW(), birthdate) FROM people; SELECT birthdt, DATE_ADD(birthdt, INTERVAL 10 SECOND) FROM people;
 2. add timestamp (data type): 
 create table comments (content varchar(100), create_at timestamp default now())
+3. update timestamp when comment changed:
+create table comments (content varchar(100), changed_at timestamp default now() on update now()/current_timestamp)
+update comments set content='hello world' where content='hello regi';
 
 
 
