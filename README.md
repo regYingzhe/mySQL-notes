@@ -23,7 +23,7 @@ e) Commonly used commands to refine selection in mySQL
 5. Another wildward: '____' for specifying how many digits/characters (using escape character)
 
 f) Commonly used aggregates functions
-1. count: select count(movie_title) from movie_2017 where movie_title like "%love%";
+1. count: select count(movie_title) from movie_2017 where movie_title like "%love%" to print out how many movies released in 2017
 2. group by: select drug_name, drug_manufacture, min(released_year) from drug_store group by drug_name
 3. sum: select song_writer_lname, song_writer_fname, sum(works) from songs group by song_write_lname, song_write_fname 
 4. avg: select director_name, avg(selling_tickets) from movies group by director_name
